@@ -3,6 +3,7 @@ import re
 from datetime import datetime, timedelta
 #import numpy as np
 
+#A)
 def count_log_files(directory):
     total_log_files = 0
     total_log_lines = 0
@@ -18,7 +19,7 @@ def count_log_files(directory):
     print(total_log_files)
     print(total_log_lines)
     print(total_error_files)
-
+#B)
 def count_log_lines(file):
     total_nonempty_lines = 0
     with open(file, 'r') as f:
@@ -26,6 +27,7 @@ def count_log_lines(file):
                         if line.strip():
                             total_nonempty_lines += 1
     return total_nonempty_lines
+#C)
 def check_error_line(file):
     error = 0
     with open(file, 'r') as f:
@@ -93,7 +95,7 @@ def extract_message_body(line):
     match = match_result[1]
     return match.group(3)
     
-
+#D)
 def count_common_words(directory):
     word_counts = {}
 
@@ -121,7 +123,7 @@ def count_common_words(directory):
     else:
       most_common_words = [word for word, _ in sorted_word_counts[:5]]
       return most_common_words
-
+  #E)
 def find_longest_warning_period(directory):
   warning_timestamps = []
 
@@ -208,6 +210,7 @@ def is_warning(line):
     else: return 0
 
 if __name__ == "__main__":
+    #input is path to the directory where set is stored
     directory_path = input()
     #contents = os.listdir(directory_path)
     count_log_files(directory_path)
