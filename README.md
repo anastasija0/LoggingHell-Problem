@@ -1,4 +1,4 @@
-Part 1 of homework
+Part 1 of homework for PSIML10
 
 # Logging-Hell
 You are a software engineer thrown to work on a legacy application trying to figure out the state of the codebase, but you have one small problem - you have no access to the code. Luckiliy a good minded colleague provided you with some production logs and it's up to you to figure out how the app performs. After a quick glance at the logs you realize that there are multiple different services all using different log formats, this is going to get messy. You are given a directory that contains arbitrarily deep subdirectory tree. Inside of the subdirectories scattered around you can find the log files (which end wiht ".logtxt" extension). - Log files can be formatted in up to 5 different ways, you need to go through the files in the public dataset and figure out the exact formats.
