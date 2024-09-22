@@ -1,7 +1,7 @@
 # Logging-Hell
 A project analyzing production logs from a hypothetical legacy application. The analysis includes counting log files, entries, identifying error entries, extracting common words, and determining warning periods using various log formats.
 
-**Key Features**
+# **Key Features**
 
 **Python:** Main programming language used for log analysis.
 
